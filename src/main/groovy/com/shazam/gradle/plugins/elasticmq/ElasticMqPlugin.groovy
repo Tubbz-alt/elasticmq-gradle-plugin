@@ -9,6 +9,8 @@ class ElasticMq implements Plugin<Project> {
 
     // figure out how to configure with a configuration task
     // instead of hardcoding the port number
+
+    // add in task descriptions as well
     void apply(Project project) {
         def server = null
 
