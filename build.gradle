@@ -4,8 +4,6 @@ apply plugin: 'maven'
 buildscript {
     repositories {
         mavenLocal()
-        //maven { url "https://nexus.softwaremill.com/content/repositories/releases" }
-        //maven { url "http://repo.spray.io/" }
     }
 
     dependencies {
@@ -29,13 +27,3 @@ dependencies {
 
 group = 'com.shazam'
 version = '0.1'
-
-//apply plugin: ElasticMq
-
-//class ElasticMq implements Plugin<Project> {
-//    void apply(Project project) {
-//        project.task('hello') << {
-//            println "Hello from the ElasticMq"
-//        }
-//    }
-//}
