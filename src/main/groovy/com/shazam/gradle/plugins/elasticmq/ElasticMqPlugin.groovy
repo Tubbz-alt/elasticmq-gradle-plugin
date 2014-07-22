@@ -31,11 +31,10 @@ class ElasticMq implements Plugin<Project> {
         def server = null
 
         project.task('startElasticMq') << {
-            println "Port is " + project.elasticmq.port
             println "Starting ElasticMQ"
             server = SQSRestServerBuilder
-                    .withPort(9320)
-                    .withServerAddress(new NodeAddress("http", "localhost", 9320, ""))
+                    .withPort(project.elasticmq.port)
+                    .withServerAddress(new NodeAddress("http", "localhost", project.elasticmq.port, ""))
                     .start()
 
             // replace with debug statements

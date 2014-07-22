@@ -36,4 +36,11 @@ runElasticMq will bring up the server and wait until the script is killed.  This
 
 Configuration
 -----
-TBD
+The port ElasticMQ will use can be configured through the elsticmq project extension, for example the following snippet will start on port 9320:
+<pre>
+apply plugin: 'elasticmq'
+
+elasticmq {
+	port = 9320
+}
+</pre>

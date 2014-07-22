@@ -9,14 +9,9 @@
  *
  **/
 package com.shazam.gradle.plugins.elasticmq
-
-import org.gradle.api.tasks.Input
-
 /**
  * Extension for the ElasticMq plugin that allows providing configuration
  */
 class ElasticMqExtension {
-    @Input
-    @org.gradle.api.tasks.Optional
-    Integer port
+    Integer port = 9000
 }
