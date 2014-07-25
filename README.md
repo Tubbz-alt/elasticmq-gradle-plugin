@@ -44,3 +44,5 @@ elasticmq {
 	port = 9320
 }
 </pre>
+
+If no port number is specified, 9100 will be used
