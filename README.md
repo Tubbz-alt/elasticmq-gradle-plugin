@@ -45,7 +45,7 @@ elasticmq {
 }
 </pre>
 
-If no port number is specified, 9100 will be used
+If no port number is specified, the default of 9000 will be used
 
 Project Status
 -----
