@@ -36,7 +36,7 @@ runElasticMq will bring up the server and wait until the script is killed.  This
 
 Configuration
 -----
-The port ElasticMQ will use can be configured through the elsticmq project extension, for example the following snippet will start on port 9320:
+The port ElasticMQ will use can be configured through the elasticmq project extension, for example the following snippet will start on port 9320:
 <pre>
 apply plugin: 'elasticmq'
 
@@ -46,3 +46,9 @@ elasticmq {
 </pre>
 
 If no port number is specified, 9100 will be used
+
+Project Status
+-----
+The current stable version is 0.1 and is available from Maven central as 'com.shazam:elasticmq-plugin:0.1'
+
+
