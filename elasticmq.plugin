@@ -1,0 +1,9 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.shazam:elasticmq-plugin:0.1"
+    }
+}
