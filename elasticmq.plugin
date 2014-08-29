@@ -1,13 +1,15 @@
 buildscript {
-    repositories {
-        mavenCentral()
+	repositories {
+		mavenCentral()
 		maven { url "https://nexus.softwaremill.com/content/repositories/releases" }
 		maven { url "http://repo.spray.io/" }
-    }
+	}
 
-    dependencies {
-        classpath "com.shazam:elasticmq-plugin:0.1"
-    }
+	dependencies {
+		classpath "com.shazam:elasticmq-plugin:0.1"
+	}
 }
 
-apply plugin: 'elasticmq'
+if (!project.plugins.findPlugin(com.shazam.gradle.plugins.elasticmq.ElasticMq)) {
+	project.apply(plugin: com.shazam.gradle.plugins.elasticmq.ElasticMq)
+}
