@@ -1,6 +1,8 @@
 buildscript {
     repositories {
         mavenCentral()
+		maven { url "https://nexus.softwaremill.com/content/repositories/releases" }
+		maven { url "http://repo.spray.io/" }
     }
 
     dependencies {
