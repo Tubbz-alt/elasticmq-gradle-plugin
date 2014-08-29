@@ -7,3 +7,5 @@ buildscript {
         classpath "com.shazam:elasticmq-plugin:0.1"
     }
 }
+
+apply plugin: 'elasticmq'
